@@ -28,17 +28,24 @@
 
 // Problem 2: Reverse a string
 
-const strReverse = (string) => {
-    console.log(string);
-    let strArr = string.split('');
-    newStrArr = [];
-    for (let i = 0; i < strArr.length; i++) {
-        newStrArr[i] = strArr[strArr.length - i - 1];
-    }
-    const revString = newStrArr.join('');
-    console.log(revString);
-}
+// const strReverse = (string) => {
+//     console.log(string);
+//     let strArr = string.split('');
+//     newStrArr = [];
+//     for (let i = 0; i < strArr.length; i++) {
+//         newStrArr[i] = strArr[strArr.length - i - 1];
+//     }
+//     const revString = newStrArr.join('');
+//     console.log(revString);
+// }
 
-strReverse("Nuclear");
+// strReverse("Nuclear");
 
 // Problem 3: 
+
+const valueIndex = (array, value) => {
+    const index = array.indexOf(value);
+    console.log(index);
+}
+
+valueIndex([10, 15, 29, 50], 10);
